@@ -25,20 +25,18 @@ public class firstTest {
 		// implement Assertion in one chain
 		Validations.assertThat().element(driver, FirstTestPage.Results()).text().doesNotEqual(FirstTestPage.Results())
 				.perform();
-
 	}
 
 	@BeforeClass
 	public void setup() {
 		driver = DriverFactory.getDriver();
 		// Anonymous Fluent POMs
-		new FirstTestPage(driver).navigate(); 
+		new FirstTestPage(driver).navigate();
 	}
 
 	@AfterClass
 	public void teardown() {
 
 		BrowserActions.closeCurrentWindow(driver);
-
 	}
 }

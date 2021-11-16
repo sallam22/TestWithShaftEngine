@@ -1,0 +1,19 @@
+
+################################################################################################################################################
+Starting Execution:	[1 out of 1] test cases in the current suite
+Test Method:		[Gui.testing.firstTest.checkSearchingFuncality]
+Test Description:	[Check the search function]
+################################################################################################################################################
+[ReportManager] Successfully loaded the following test data file [src/test/resources/TestDataFiles/search.json]. @16-11-2021 22:44:21.0596 PM
+[ReportManager] Successfully created attachment [Test Data - JSON] @16-11-2021 22:44:22.0188 PM
+[ReportManager] Target URL: [https://www.google.com/ncr] @16-11-2021 22:44:22.0188 PM
+[ReportManager] Initial URL: [https://www.google.com] @16-11-2021 22:44:22.0287 PM
+[ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20211116-224413", Target File: "\1637095463407_checkSearchingFuncality.gif"]. @16-11-2021 22:44:23.0496 PM
+[ReportManager] Browser Action [NavigateToURL] successfully performed. With the following test data [https://www.google.com/ncr]. @16-11-2021 22:44:23.0922 PM
+[ReportManager] Element Action [Type] successfully performed. With the following test data [selenium webdriver]. @16-11-2021 22:44:27.0400 PM
+[ReportManager] Element Action [KeyPress] successfully performed. With the following test data [ENTER]. @16-11-2021 22:44:29.0862 PM
+[ReportManager] Element Action [GetText] successfully performed. With the following test data [What is Selenium WebDriver? Selenium WebDriver is a web framework that permits you to execute cross-browser tests. This tool is used for automating web-based application testing to verify that it performs expectedly. Selenium WebDriver allows you to choose a programming language to create test scripts.]. @16-11-2021 22:44:30.0460 PM
+[ReportManager] Loaded Shared OpenCV @16-11-2021 22:44:41.0094 PM
+[ReportManager] Assertion [ValidateElementAttribute] PASSED. Expected [Value Should not be 'By.xpath: //body/div[@id='main']/div[@id='cnt']/div[@id='rcnt']/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/span[1]/span[1]' for the 'text' attribute, element locator 'By.xpath: //body/div[@id='main']/div[@id='cnt']/div[@id='rcnt']/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/span[1]/span[1]'] and Actual [What is Selenium WebDriver? Selenium WebDriver is a web framework that permits you to execute cross-browser tests. This tool is used for automating web-based application testing to verify that it performs expectedly. Selenium WebDriver allows you to choose a programming language to create test scripts.]. Comparison Type [EQUALS]. Validation Type [NEGATIVE]. @16-11-2021 22:44:41.0858 PM
+[ReportManager] Successfully created attachment [Screenshot - 1637095470738_checkSearchingFuncality_ValidateElementAttribute_passed] @16-11-2021 22:44:41.0894 PM
+[ReportManager] Successfully created attachment [Animated Gif - checkSearchingFuncality] @16-11-2021 22:44:41.0905 PM

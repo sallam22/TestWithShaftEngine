@@ -6,24 +6,26 @@ import org.openqa.selenium.WebDriver;
 
 import com.shaft.gui.browser.BrowserActions;
 import com.shaft.gui.element.ElementActions;
+import com.shaft.tools.io.JSONFileManager;
 
 public class FirstTestPage {
 	// variables
 	private WebDriver driver;
-	private final String URL = "https://www.google.com/ncr";
-	private String Keyword = "selenium webdriver";
+	private final String URL = System.getProperty("googleURL");
+	public JSONFileManager testData = new JSONFileManager("src/test/resources/TestDataFiles/search.json");
 
+	// constructor
 	public FirstTestPage(WebDriver driver) {
 		this.driver = driver;
 	}
 
-//Locators for elements
+	// Locators for elements
 	private By Search = By.name("q");
 
-//actions 
+	// actions methods
 	public void SearchForKeyword() {
 
-		new ElementActions(driver).type(Search, Keyword).keyPress(Search, Keys.ENTER);
+		new ElementActions(driver).type(Search, testData.getTestData("searchQuery")).keyPress(Search, Keys.ENTER);
 
 	}
 
