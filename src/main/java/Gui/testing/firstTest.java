@@ -12,35 +12,33 @@ import com.shaft.validation.Validations;
 import Gui.Pages.FirstTestPage;
 import io.qameta.allure.Description;
 
-
 public class firstTest {
 	private WebDriver driver;
 
-@Description("Given:Open Browser and Search for \"selenium webdriver\" Then Check results")
+	@Description("Given:Open Browser and Search for \"selenium webdriver\" Then Check results")
 
-  @Test(description="Check the search function")
-  public void checkSearchingFuncality() {
-	  
-	  // implement Fluent Design To Increase Performance
-	 new  FirstTestPage(driver).navigate(). SearchForKeyword();
-	 // implement Assertion in one chain
-	Validations.assertThat().element(driver, FirstTestPage.Results() ).text().doesNotEqual( FirstTestPage.Results() ).perform();
+	@Test(description = "Check the search function")
+	public void checkSearchingFuncality() {
 
-  }
-  
-  
-  
-  @BeforeClass
-  public void setup() {
+		// implement Fluent Design To Increase Performance
+		new FirstTestPage(driver).navigate().SearchForKeyword();
+		// implement Assertion in one chain
+		Validations.assertThat().element(driver, FirstTestPage.Results()).text().doesNotEqual(FirstTestPage.Results())
+				.perform();
+
+	}
+
+	@BeforeClass
+	public void setup() {
 		driver = DriverFactory.getDriver();
-	    new  FirstTestPage(driver).navigate();   // Anonymous Fluent POMs
-  	
-  }
-  @AfterClass
-  public void teardown() {
-  	
-	  BrowserActions.closeCurrentWindow(driver);
+		// Anonymous Fluent POMs
+		new FirstTestPage(driver).navigate(); 
+	}
 
+	@AfterClass
+	public void teardown() {
 
-  }
+		BrowserActions.closeCurrentWindow(driver);
+
+	}
 }
